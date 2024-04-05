@@ -1,0 +1,19 @@
+{
+  "name": "playwright-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "npx playwright test --project='Logged in User Flow' --workers=3 --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
