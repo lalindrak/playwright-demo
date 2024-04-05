@@ -3,7 +3,7 @@ import { STORAGE_STATE } from '../playwright.config';
 
 setup('Test Login Functionality', async ({ page,loginPage }) => {
   await page.goto('')
-  await loginPage.peformSignIn(process.env.username!,process.env.password!)
+  await loginPage.peformSignIn(process.env.USERNAME!,process.env.PASSWORD!)
   await page.context().storageState({path:STORAGE_STATE})
   await page.close()
 });

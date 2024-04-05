@@ -7,7 +7,7 @@ test.beforeEach(async ({ page}) => {
 test('Test basic verification of the user', async ({homePage }) => {
   await homePage.clickMyAccountsLink(" Edit your account information")
   let loggedInEmail = await homePage.getPersonalInformation('E-Mail')
-  expect(loggedInEmail).toEqual(process.env.username!)
+  expect(loggedInEmail).toEqual(process.env.USERNAME!)
 });
 
 let categories =['Components','Cameras','Software']
